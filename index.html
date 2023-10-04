@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | Welcome to Munyang Solutions</title>
+        <link rel="stylesheet" href="css/styles1.css">
+
+    </head>
+    <body>
+
+      <section><nav>
+        <div class="logo">
+          <img src="image/logo_3 (2).png">
+        </div>
+        <div class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Services</a>
+            <ul class="submenu">
+              <li><a href="#">Web Services</a>
+                <ul class="subsubmenu">
+                  <li><a href="dev.html">Web development</a></li>
+                  <li><a href="hosting.html">Web hosting</a></li>
+                  <li><a href="registration.html">Web registration</a></li>
+                  <li><a href="email.html">Email hosting</a></li>
+                </ul>
+              </li>
+              <li><a href="system.html">System Design</a></li>
+              <li><a href="computer.html">Computer Accessories</a></li>
+            </ul>
+          </li>
+          <li><a href="promotion.html">Promotions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav> 
+    </section>
+
+    <header>
+      
+      <div class="slider-container"><hr>
+        <div class="slider fade">          
+         <img src="image/single domain.jpeg" alt="Image 1">
+         <div class="slider-text">
+          Register your domain with us and enjoy the benefits
+        </div>
+        </div>
+        <div class="slider fade">
+          <img src="image/web design.jpg" alt="Image 2">
+          <div class="slider-text">
+            Register your domain with us and enjoy the benefits
+          </div>
+        </div>
+        <div class="slider fade">
+          <img src="image/web hosting.png" alt="Image 3">
+          <div class="slider-text">
+            Register your domain with us and enjoy the benefits
+          </div>
+        </div>
+      </div>
+    </header>
+
+   <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("slider");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
+   </script>
+<div class="container-bodysection">
+  <div class="box-column1">
+    <div class="image-box1">
+      
+      <h3>Munyang Consulting.</h3>                  
+      <p>Your number one provider in Information Technology Services</p>
+         <a href="#" class="button">Learn More</a>
+    </div>
+  </div>
+
+  <div class="image-column1">
+    <h3>Domain Hosting</h3>
+    <img src="image/web.JPG" alt="Domain Data Center">
+    
+    <p>Munyang is an IT company providing solutions across the globe. 
+      We have our offices in some African counties including Cameroon and Kenya. 
+      Our head office is located in Cameroon.</p>
+  </div>
+  
+</div>
+
+   <!--image section for about us and our services-->   
+   <section>    
+      <div class="service-container">
+            <h1> Web Services</h1>
+              <p>At Munyang we value our customers and that’s why we dedicate 
+                ourselves to providing the best IT services to our esteemed customers.</p>
+      
+              <div class="container-service">
+                <div class="card-service">
+                  <img src="image/domain host.jpg" alt="domain hosting"/>
+                  <h3>Domain Registration.</h3>
+                </div>
+                <div class="card-service">
+                  <img src="image/email.jpg" alt="Email hosting"/>
+                   <h3>Email Hosting.</h3>
+                </div>
+                <div class="card-service">
+                  <img src="image/web hosting.jpg" alt="Web hosting"/>
+                  <h3>Web Hosting.</h3>
+                </div>
+                <div class="card-service">
+                  <img src="image/web design.png" alt="Web design"/>
+                  <h3>Web Design & Development.</h3>
+                </div>
+              </div>
+      </div>
+     <!-- End web Service Section -->
+            
+  <!-- system Service Section -->
+      <div class="service-container">
+        <h1> System Services</h1>
+          <p>At Munyang we value our customers and that’s why we dedicate ourselves to providing the best IT services to our esteemed customers.</p>
+  
+          <div class="container-service">
+            <div class="card-service">
+              <img src="image/sms.jpg" alt="School Management System"/>
+              <h3>School System</h3>
+            </div>
+            <div class="card-service">
+              <img src="image/pos.jpg" alt="Point of Sales System"/>
+               <h3>Point of Sales System</h3>
+            </div>
+            <div class="card-service">
+              <img src="image/inventory ssystem.png" alt="Web hosting"/>
+              <h3>Inventory Systems </h3>
+            </div>
+            <div class="card-service">
+              <img src="image/ecom.png" alt="eCommerce System"/>
+              <h3>eCommerce System</h3>
+            </div>
+          </div>
+       </div>
+              <!-- End system Service Section -->
+
+              <div class="service-container">
+                <h1> Computer Related Products & Services.</h1>
+                  <p>At Munyang we value our customers and that’s why we dedicate ourselves 
+                    to providing the best IT services to our esteemed customers.</p>
+          
+                  <div class="container-service">
+                    <div class="card-product">
+                      <img src="image/Software.png" alt="Computer Softwares"/>
+                      <h3>Computer Softwares</h3>
+                    </div>
+                    <div class="card-product">
+                      <img src="image/comp hardware.png" alt="Computer Hardware Accessories"/>
+                       <h3>Computer Hardware & Peripherals</h3>
+                    </div>
+                    <div class="card-product">
+                      <img src="image/help.jpg" alt="IT Support System"/>
+                      <h3>IT Helpdesk Support System </h3>
+                    </div>
+                    <div class="card-product">
+                      <img src="image/security.png" alt="IT Security Products"/>
+                      <h3>IT Security Products</h3>
+                    </div>
+                  </div>
+               </div>            
+          </section>  
+            <!-- other Service Section -->
+          <div class="container-title">
+            <h1>Our Key Responsibilities</h1>
+
+          </div>
+            <div class="container-responsibility">
+              <div class="image-column">
+                <img src="image/data center.jpg" alt="Domain Data Center">
+              </div>
+              <div class="box-column">
+                <div class="image-box">
+                  
+                  <h3>Domain Hosting</h3>
+                  <p>Show exactly what you have for your business</p>
+                  <p>Built on top of a reliable platform and backed by 24/7 expert support, 
+                    Domain.com's Shared Hosting is designed for all user types. Regardless if you are
+                     just starting your online presence or already manage a fleet of websites, Domain.com 
+                     provides you with the tools and controls you need to build, manage, and secure a powerful website.</p>
+                     <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+
+             <div class="container-responsibility">
+              <div class="box-column">
+                <div class="image-box">
+                  
+                  <h3>Web Development</h3>                  
+                  <p>Shared hosting means that multiple different websites are all 
+                    hosted on the same server, with each user being allocated a certain 
+                    amount of storage space and a certain amount of resources</p>
+                     <a href="#" class="button">Learn More</a>
+                </div>
+              </div>
+
+              <div class="image-column">
+                <img src="image/web.JPG" alt="Domain Data Center">
+              </div>
+              
+            </div>
+
+            <div class="container-responsibility">
+              <div class="image-column">
+                <img src="image/email hosting.JPG" alt="Email Hosting">
+              </div>
+              <div class="box-column">
+                <div class="image-box">
+                  
+                  <h3>Email Hosting</h3>                  
+                  <p>Email hosting is a unique solution focused primarily on email servers. 
+                    This service works independently from website hosting, hence your business 
+                    will still operate at full scale even while you’re setting everything up.</p>
+                     <a href="#" class="button">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!--End of key responsibilities-->
+
+      <!--Footer -->
+      <footer class="footer">
+        <div class="column-touch">
+          <h3>WHO WE ARE</h3>
+          <p>
+            Munyang Solutions is an IT Services Providing Company which specializes
+            in website development, domain registration, website designing, website hosting, system development and all software and hardware solutions.
+          </p>
+        </div>
+
+        <div class="column-touch">
+          <h3>MUNYANG POLICIES</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms And Conditions</a></li>
+            <li><a href="#">Copyright Information</a></li>
+            <li><a href="#">Find Us On The Map</a></li>
+          </ul>
+        </div>
+
+        <div class="column-touch">
+          <h3>GET IN TOUCH</h3>
+          <p>
+            HEAD OFFICE<br>
+            Address: Carrefour Emia, Yaounde-Cameroon<br>
+            Call: +237 675370599<br>
+            Email: sales@munyang.net<br>
+            Website: <a href="http://www.munyang.net">www.munyang.net</a>
+          </p>
+        </div>
+      </footer>
+
+      <div class="copyright">
+        <p>&copy; 2023 Munyang Solutions | All Rights Reserved.</p>
+      </div>
+
+    </body>
+</html>
