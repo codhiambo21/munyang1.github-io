@@ -1,46 +1,48 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
+<!DOCTYPE html>
+<html>
+<head>
         <!-- META -->
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Home | Welcome to Munyang Solutions</title>
         <link rel="stylesheet" href="css/styles1.css">
 
     </head>
-    <body>
+<body>
 
-      <section><nav>
-        <div class="logo">
-          <img src="image/logo_3 (2).png">
-        </div>
-        <div class="menu-icon">
-          <i class="fa fa-bars"></i>
-        </div>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="#">Services</a>
-            <ul class="submenu">
-              <li><a href="#">Web Services</a>
-                <ul class="subsubmenu">
-                  <li><a href="dev.html">Web development</a></li>
-                  <li><a href="hosting.html">Web hosting</a></li>
-                  <li><a href="registration.html">Web registration</a></li>
-                  <li><a href="email.html">Email hosting</a></li>
-                </ul>
-              </li>
-              <li><a href="system.html">System Design</a></li>
-              <li><a href="computer.html">Computer Accessories</a></li>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="image/logo_3 (2).png" alt="Munyang Solutions">
+    </div>
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="submenu">
+            <a href="#">Services</a>
+            <ul class="sub-menu">
+                <li class="submenu-item"><a href="web.html">Web Services</a>
+                    <ul class="sub-sub-menu">
+                        <li><a href="web.html">Web Design & Development</a></li>
+                        <li><a href="hosting.html">Web Hosting</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="email.html">Email Hosting</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item"><a href="system.html">System Design & Development</a></li>
+                <li class="submenu-item"><a href="computer.html">Computer Accessories</a></li>
             </ul>
-          </li>
-          <li><a href="promotion.html">Promotions</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav> 
-    </section>
+        </li>
+        <li><a href="promotion.html">Promotions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
     <header>
       
@@ -241,6 +243,23 @@ function showSlides() {
               </div>
             </div>
             <!--End of key responsibilities-->
+
+            <script>
+              /* Toggle between adding and removing the "responsive" class to navbar when responsive icon is clicked */
+              document.querySelector(".navbar .menu-toggle").addEventListener("click", function() {
+                  document.querySelector(".navbar .menu").classList.toggle("show");
+                });
+
+                document.querySelector(".navbar .dropdown .dropbtn").addEventListener("click", function() {
+                  document.querySelector(".navbar .dropdown .dropdown-content").classList.toggle("show");
+                });
+
+                document.querySelectorAll(".navbar .dropdown .submenu").forEach(function(submenu) {
+                  submenu.addEventListener("click", function() {
+                    this.classList.toggle("show");
+                  });
+                });
+          </script>
 
       <!--Footer -->
       <footer class="footer">
