@@ -623,7 +623,7 @@ body {
   border-radius: 10px;
   margin: 20px;
   padding: 10px;
-  max-width: 300px;
+  max-width: 350px;
   text-align: center;
 }
 .card-service img {
@@ -1005,29 +1005,29 @@ body {
 
 @media (min-width: 768px) {
   .column {
-    width: 48%; /* Two columns on larger screens */
+    width: 48%; 
     float: left;
     margin-right: 2%;
   }
 
   .column:nth-child(2n) {
-    margin-right: 0; /* Remove margin for every 2nd column */
+    margin-right: 0; 
   }
 }
 
 @media (min-width: 992px) {
   .column {
-    width: 31.33%; /* Three columns on larger screens */
+    width: 31.33%; 
   }
 
   .column:nth-child(3n) {
-    margin-right: 0; /* Remove margin for every 3rd column */
+    margin-right: 0; 
   }
 }
 
 @media (min-width: 1200px) {
   .column {
-    width: 23.33%; /* Four columns on extra-large screens */
+    width: 23.33%; 
   }
 
   .column:nth-child(4n) {
@@ -1126,7 +1126,7 @@ body {
 /* Media query for responsive design */
 @media (max-width: 768px) {
   body {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 16px; 
   }
 
   nav {
@@ -1134,11 +1134,11 @@ body {
   }
 
   .logo img {
-    height: 100px; /* Adjust logo height for smaller screens */
+    height: 100px; 
   }
 
   .menu {
-    flex-direction: column; /* Display menu items in a column */
+    flex-direction: column; 
     align-items: center;
     padding: 0;
   }
@@ -1148,7 +1148,7 @@ body {
   }
 
   .menu li a {
-    font-size: 20px; /* Adjust font size for menu items */
+    font-size: 20px; 
   }
 
   .menu-icon i {
@@ -1156,7 +1156,7 @@ body {
   }
 
   .about-section h1 {
-    font-size: 30px; /* Adjust font size for the about section heading */
+    font-size: 30px; 
   }
 
   .container-webhosting .column-webhosting {
