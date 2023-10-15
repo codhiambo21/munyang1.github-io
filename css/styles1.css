@@ -1,7 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
-* 
-body{
-   font-family: 'Open Sans',serif;
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+* body {
+  font-family: "Open Sans", serif;
 }
 
 body {
@@ -10,7 +9,7 @@ body {
   padding: 0;
   background-color: rgb(228, 241, 237);
 }
-
+/*
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -75,11 +74,10 @@ nav {
 
 .submenu li:hover .subsubmenu {
   display: block;
-  
 }
 
 .menu-icon {
-  display:table-row-group;
+  display: table-row-group;
   color: black;
 }
 
@@ -87,19 +85,119 @@ nav {
   display: none;
 }
 
-/* Show the menu when active class is added */
+/* Show the menu when active class is added 
 .menu.active {
   display: flex;
   flex-direction: column;
 }
 
-
 /*End of menu */
 
-/* header sliders */
-header{
+/* Add styles for the navbar */
+        
+/* Navbar styles */
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
   position: relative;
-  width:  100%;
+  text-transform: uppercase;
+}
+
+.menu a {
+  color: #030303;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu .submenu:hover .sub-menu {
+  display: block;
+  color: blue;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-menu li {
+  display: block;
+}
+
+.sub-menu .submenu-item:hover .sub-sub-menu {
+  display: block;
+  color: blue;
+}
+
+.sub-sub-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  left: 100%;
+  top: 0;
+}
+
+.sub-sub-menu li {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .menu {
+      display: none;
+      flex-direction: column;
+  }
+
+  .menu li {
+      margin-right: 0;
+  }
+
+  .menu.active {
+      display: flex;
+  }
+}
+
+/* header sliders */
+header {
+  position: relative;
+  width: 100%;
   max-width: 100%;
   height: 150vh;
 }
@@ -109,13 +207,11 @@ header{
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-
 }
 
 .slider {
   display: none;
   width: 100%;
-
 }
 .slider-text {
   position: absolute;
@@ -129,10 +225,8 @@ header{
   font-family: Impact, fantasy;
 }
 
-
 .slider img {
   width: 100%;
- 
 }
 
 .fade {
@@ -140,10 +234,12 @@ header{
 }
 
 @keyframes fade {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
-  10%, 90% {
+  10%,
+  90% {
     opacity: 1;
   }
 }
@@ -157,9 +253,8 @@ header{
   padding-right: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-  
 }
-.container-bodysection h1{
+.container-bodysection h1 {
   text-align: center;
 }
 
@@ -167,29 +262,25 @@ header{
 .box-column1 {
   flex: 1;
   max-width: 80%;
-  
-  
 }
-.image-column1 p{
+.image-column1 p {
   color: black;
   font-size: 20px;
   font-family: Didot, serif;
 }
-.image-column1 h3{
+.image-column1 h3 {
   color: black;
   font-size: 45px;
   font-family: Didot, serif;
 }
 
-
 .image-box1 {
   padding-right: 30px;
   text-align: justify;
   padding-left: 30px;
-
 }
 
-.image-box1 h3{
+.image-box1 h3 {
   font-size: 75px;
   padding-top: 60px;
   margin-bottom: 20px;
@@ -197,7 +288,7 @@ header{
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }
 
-.image-box1 p{
+.image-box1 p {
   color: black;
   font-size: 20px;
   padding-top: 40px;
@@ -235,18 +326,18 @@ header{
   }
 }
 
-.service-container{
+.service-container {
   padding-bottom: 60px;
   align-items: center;
   justify-content: center;
 }
-.service-container h1{
-  text-align:  center;
+.service-container h1 {
+  text-align: center;
   font-size: 40px;
   font-family: Stencil Std, fantasy;
   color: rgb(3, 3, 3);
 }
-.service-container p{
+.service-container p {
   font-size: 25px;
   text-align: center;
   padding: 50px;
@@ -258,14 +349,13 @@ header{
   flex-wrap: wrap;
   justify-content: center;
 }
-.card-service h3{
+.card-service h3 {
   color: blue;
   font-size: 25px;
 }
 
 .card-service {
- 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
   margin: 20px;
@@ -274,39 +364,33 @@ header{
   text-align: center;
 }
 .card-service img {
- 
   border-radius: 20px;
   display: block;
-    width: 100%;
-    height: 18rem;
-    object-fit: cover;
-
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
 }
 .card-product {
- 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
   margin: 20px;
   padding: 10px;
   max-width: 250px;
   text-align: center;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .card-product img {
- 
   border-radius: 20px;
   display: block;
-    width: 100%;
-    height: 18rem;
-    object-fit: cover;
-
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
 }
 .card-service:hover {
   box-shadow: 0 30px 90px 0 rgba(6, 238, 110, 0.2);
 }
-
 
 @media screen and (max-width: 768px) {
   .card {
@@ -320,17 +404,14 @@ header{
   }
 }
 
-
 /*responsibilities*/
 
-
-.container-title h1{
+.container-title h1 {
   text-align: center;
   font-size: 40px;
-  
+
   font-family: DejaVu Sans Mono, monospace;
   color: rgb(3, 3, 3);
-  
 }
 .container-responsibility {
   display: flex;
@@ -341,7 +422,7 @@ header{
   padding-bottom: 20px;
   background-color: rgb(221, 218, 218);
 }
-.container-responsibility h1{
+.container-responsibility h1 {
   text-align: center;
 }
 
@@ -350,24 +431,21 @@ header{
   flex: 1;
   max-width: 80%;
   background-color: rgb(221, 218, 218);
-  
 }
-
 
 .image-box {
   padding-right: 30px;
   text-align: justify;
   padding-left: 30px;
-
 }
 
-.image-box h3{
+.image-box h3 {
   font-size: 45px;
   color: green;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }
 
-.image-box p{
+.image-box p {
   color: black;
   font-size: 20px;
   font-family: Didot, serif;
@@ -391,7 +469,7 @@ header{
 }
 
 .image-box button:hover {
-  background-color: 
+  background-color: ;
 }
 
 @media screen and (max-width: 768px) {
@@ -421,25 +499,26 @@ header{
 
 .column-touch h3 {
   margin-bottom: 10px;
-	color: rgb(250, 250, 250);
-	font-size: 25px;
-	padding-bottom: 20px;
+  color: rgb(250, 250, 250);
+  font-size: 25px;
+  padding-bottom: 20px;
 }
 
 .column-touch ul {
   list-style-type: none;
   padding: 0;
-	color: white;
+  color: white;
 }
 
-.column-touch li, a, p {
+.column-touch li,
+a,
+p {
   margin-bottom: 5px;
-	color: white;
-	font-size: 15px;
+  color: white;
+  font-size: 15px;
 }
 
 .column-touch a {
-  
   text-decoration: none;
 }
 
@@ -448,16 +527,15 @@ header{
   color: rgb(248, 248, 248);
   text-align: center;
   padding: 20px;
-	font-size: 25px;
+  font-size: 25px;
 }
 
 /* End Footer */
 
-
 /* Media query for responsive design */
 @media (max-width: 768px) {
   body {
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   nav {
@@ -465,46 +543,46 @@ header{
   }
 
   .menu li {
-    margin-left: 10px; 
+    margin-left: 10px;
   }
 
   .slider-text {
-    font-size: 30px; 
+    font-size: 30px;
   }
 
   .image-box1 h3 {
-    font-size: 40px; 
+    font-size: 40px;
   }
 
   .image-box1 p {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   .card-service h3 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .card-service p {
-    font-size: 15px; 
+    font-size: 15px;
   }
 
   .card-service img {
-    height: 14rem; 
+    height: 14rem;
   }
 
   .container-title h1 {
-    font-size: 30px; 
+    font-size: 30px;
   }
 
   .footer .column-touch h3 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .footer .column-touch ul {
-    font-size: 15px; 
+    font-size: 15px;
   }
 
   .footer .copyright {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }
