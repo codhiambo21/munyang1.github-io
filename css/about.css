@@ -4,121 +4,102 @@ body {
   padding: 0;
 	background-color: rgb(211, 210, 207);
 }
-nav {
+/* Navbar styles */
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 10px 40px;
 }
 
 .logo img {
-  height: 130px;
+  max-width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
 }
 
 .menu {
-  list-style: none;
+  display: flex;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
 }
 
 .menu li {
-  margin-left: 20px;
-  background-color: white;
-  display: flex;
-  
-      list-style:none;
-      position:relative;
-      margin:10px;
-      display:inline-block;
-}
-
-.menu li:first-child {
-  margin-left: 0px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: hsl(98, 90%, 72%);
-  font-weight: bold;
-  font-size: 25px;
-  display:inline-block;
+  margin-right: 20px;
   position: relative;
+  text-transform: uppercase;
 }
 
-.menu li a:hover {
-  color: hsl(98, 90%, 72%);
+.menu a {
+  color: #030303;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
 }
 
-.submenu {
+.menu .submenu:hover .sub-menu {
+  display: block;
+  color: blue;
+}
+
+.sub-menu {
   display: none;
   position: absolute;
-  padding-top: 20px;
-  list-style: none;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu li:hover .submenu {
+.sub-menu li {
   display: block;
 }
 
-.subsubmenu {
-  display: flex;
+.sub-menu .submenu-item:hover .sub-sub-menu {
+  display: block;
+  color: blue;
+}
+
+.sub-sub-menu {
+  display: none;
   position: absolute;
-  padding-top: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   left: 100%;
-  list-style: none;
+  top: 0;
 }
 
-.submenu li:hover .subsubmenu {
+.sub-sub-menu li {
   display: block;
-  
 }
-
-.menu-icon {
-  display:table-row-group;
-  color: black;
-}
-
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-  .logo img {
-    
-  }
-
-  .menu-icon i {
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-
-  nav {
-    padding: 10px;
-  }
-}
-/*End of menu */
 
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-  }
-
   .menu-toggle {
-    display: block;
-    cursor: pointer;
+      display: block;
   }
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
+  .menu {
+      display: none;
+      flex-direction: column;
+  }
+
+  .menu li {
+      margin-right: 0;
+  }
+
+  .menu.active {
+      display: flex;
   }
 }
 
@@ -779,7 +760,7 @@ nav {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 300px) {
   .column {
     flex: 0 0 100%;
   }
