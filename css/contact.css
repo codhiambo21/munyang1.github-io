@@ -1,0 +1,403 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+	background-color: rgb(211, 210, 207);
+}
+
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f0e9e9;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.navbar img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Navbar Links Styles */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 90%;
+  display: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  
+  .navbar-nav {
+    flex-direction: column;
+    text-align: left;
+    position: static;
+    top: 10px;
+    left: 10px;
+    width: 50%;
+    background-color: #f0e9e9;
+  }
+
+ 
+  .navbar-nav.show .navbar-toggler {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+} 
+
+.container-contact1{
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  padding: 30px;
+}
+.image-box1{
+  align-items: center;
+  justify-items: center;
+  padding: 50px;
+  background-color: rgb(241, 241, 241);
+}
+
+
+.image-box1 h3{
+   color: blue;
+ }
+.col-md-6 img{
+    height: 100%;
+    background-color: #6d6c6c;
+    }
+
+.container-location {
+  margin-top: 30px;
+  background-color: rgb(196, 193, 193);
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.custom-column {
+    margin-bottom: 20px;
+    padding: 15px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.custom-column p{
+    color: black;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container-contact{
+  margin-top: 10px;
+}
+
+.contact-location {
+  margin-top: 30px;
+  
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-column {
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-column {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 10px;
+  height: 10%;
+}
+/*
+.map-row {
+  padding: 10px;
+  width: 100%;
+  background-color: #333;
+}
+
+.map-column {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container-contact {
+  margin-top: 10px;
+}
+
+.google-map {
+  position: relative;
+  
+  height: 100%;
+}
+
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+.map-row {
+            margin-top: 30px;
+        }
+
+        .map-column {
+            flex: 0 0 100%;
+            
+        }
+
+        @media (min-width: 768px) {
+            .map-column {
+                flex: 0 0 48%; /* Two columns on larger screens */
+              }
+            }
+    
+            .google-map {
+                position: relative;
+                padding-bottom: 75%;
+                height: 0;
+            }
+    
+            .google-map iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+/*contact details*/
+.contact-location h1{
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .contact-details{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .contact-column {
+   width: 25%; /* Adjust the width as needed */
+   padding: 20px;
+   box-sizing: border-box;
+   
+ }
+ .contact-column h3{
+   font-size: 25px;
+ }
+ 
+ 
+ .contact-column p {
+   color: rgb(80, 78, 78);
+ 
+ }
+ 
+ .contact-column a, button{
+   text-decoration: none;
+   padding-top: 40px;
+   color: black;
+   font-weight: bold;
+ 
+ }
+ .contact-column span{
+     content: "\2192";
+   
+ }
+ /*contact page */
+
+.container-contact {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+  padding-top: 30px;
+  background-color: antiquewhite;
+ 
+}
+.container-contact h1{
+	color: black;
+	text-align: center;
+}
+.container-contact p{
+  text-align: center;
+  padding-top: 30px;
+  color: black;
+  font-size: 20px;
+}
+
+.contact-form{
+  width: 80%;
+    margin: auto;
+    height: 40%;
+  padding: 30px;
+}
+
+.contact-form input {
+	width: 100%;
+  height: 5vh;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.checkbox {
+  padding: 20px;
+  align-items: left;
+}
+
+.contact-form textarea {
+  width: 100%;	
+  height: 60vh;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.contact-form label {
+  
+  margin-bottom: 5px;
+	font-size: 25px;
+  padding-top: 20px;
+}
+
+
+.contact-form button {
+  width: 80%;
+  padding: 10px;
+    background-color: #f4faf8;
+  color: rgb(14, 13, 13);
+  border-radius: 5px;
+  border-color: lightblue;
+  text-align: center;
+}
+
+
+.contact-form button:hover {
+  background-color: #2815d8;
+}
+
+
+
+
+@media (max-width: 760px) {
+  .column {
+    flex: 0 0 100%;
+  }
+  .contact-form button{
+    width: 100%;
+  }
+  .map-row{
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+  height: 100%;
+  display: block;
+  justify-content: center; 
+  }
+  .google-map{
+    
+    display: block;
+  }
+  .map-column, .col-md-6{
+    width: 100%;
+    display: block;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  .column {
+    width: 48%; 
+    float: left;
+    margin-right: 2%;
+  }
+
+  .column:nth-child(2n) {
+    margin-right: 0; 
+  }
+}
+
+@media (min-width: 992px) {
+  .column {
+    width: 31.33%; 
+  }
+
+  .column:nth-child(3n) {
+    margin-right: 0; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .column {
+    width: 23.33%; 
+  }
+
+  .column:nth-child(4n) {
+    margin-right: 0; 
+  }
+}
+/* Remove margin for every 4th column */
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+
+ /* Adjust styles for smaller screens */
+ @media screen and (max-width: 768px) {
+   .contact-column {
+     width: 50%;
+   }
+ }
+ 
+ /* Adjust styles for even smaller screens */
+ @media screen and (max-width: 480px) {
+   .contact-column {
+     width: 100%;
+   }
+ }

@@ -9,197 +9,120 @@ body {
   padding: 0;
   background-color: rgb(228, 241, 237);
 }
-/*
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 10px 40px;
+  
+/* Navbar Styles */
+.navbar {
+  background-color: #f0e9e9;
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
-.logo img {
-  height: 130px;
+.navbar img {
+  max-width: 100%;
+  height: auto;
 }
 
-.menu {
+
+/* Navbar Links Styles */
+.navbar-nav  {
   list-style: none;
+  color: blue;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  flex-grow: 1;
-}
-
-.menu li {
-  margin-left: 20px;
-  background-color: white;
-  display: flex;
-}
-
-.menu li:first-child {
-  margin-left: 0;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: hsl(98, 90%, 72%);
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.menu li a:hover {
-  color: hsl(98, 90%, 72%);
-}
-
-.submenu {
-  display: none;
   position: absolute;
-  padding: 0;
-  list-style: none;
-}
-
-.menu li:hover .submenu {
-  display: block;
-}
-
-.subsubmenu {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  list-style: none;
-}
-
-.submenu li:hover .subsubmenu {
-  display: block;
-}
-
-.menu-icon {
-  display: table-row-group;
-  color: black;
-}
-
-.menu {
+  top: 40px;
+  left: 0;
+  width: 90%;
   display: none;
 }
 
-/* Show the menu when active class is added 
-.menu.active {
-  display: flex;
-  flex-direction: column;
+.navbar-nav a .nav-link .nav-item {
+  color: red; /* Set the color to red */
+} 
+.nav-link{
+  =
 }
 
-/*End of menu */
 
-/* Add styles for the navbar */
-        
-/* Navbar styles */
-.navbar {
-  background-color: white;
-  padding: 10px 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  max-width: 100%;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin-bottom: 5px;
-}
-
-.menu {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  margin-right: 20px;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.menu a {
-  color: #030303;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-}
-
-.menu .submenu:hover .sub-menu {
-  display: block;
+.nav-item a{
+  margin: 0 10px;
   color: blue;
 }
 
-.sub-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.sub-menu li {
-  display: block;
-}
-
-.sub-menu .submenu-item:hover .sub-sub-menu {
-  display: block;
-  color: blue;
-}
-
-.sub-sub-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  left: 100%;
-  top: 0;
-}
-
-.sub-sub-menu li {
-  display: block;
-}
-
+/* Media Query for Small Screens */
 @media (max-width: 768px) {
-  .menu-toggle {
-      display: block;
+  
+  .navbar-nav {
+    flex-direction: column;
+    text-align: left;
+    position: static;
+    top: 10px;
+    left: 10px;
+    width: 50%;
+    background-color: #f0e9e9;
   }
 
-  .menu {
-      display: none;
-      flex-direction: column;
+ 
+  .navbar-nav.show .navbar-toggler {
+    display: none;
   }
 
-  .menu li {
-      margin-right: 0;
+  .nav-item {
+    margin: 10px 0;
   }
+}    
 
-  .menu.active {
-      display: flex;
-  }
+
+.about-section{
+  padding: 10px;
+  padding-left: 20px;
+  margin-top: 10px;
+
+}
+.about-section h1{
+  color: black;
+  font-size: 35px;
+  text-align: left;
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.about-section1 h1 {
+  background-color: #180904;
+  color: white;
+  text-align: center;
+  font-family: cursive;
 }
 
 /* header sliders */
-header {
-  position: relative;
+
+.carousel-item img {
   width: 100%;
-  max-width: 100%;
-  height: 150vh;
+  height: 80vh;
+  animation: fade 3s infinite;
+  
+}
+
+/* Custom styles for carousel controls */
+.carousel-control-prev, .carousel-control-next {
+  font-size: 25px; 
+  color: #fd0a47; 
+}
+
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  color: #0056b3; 
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  
+  .carousel-item img {
+      max-height: 300px; 
+  }
 }
 
 .slider-container {
@@ -219,16 +142,10 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: rgb(3, 255, 179);
+  color: red;
   font-size: 50px;
-  font-weight: bold;
   font-family: Impact, fantasy;
 }
-
-.slider img {
-  width: 100%;
-}
-
 .fade {
   animation: fade 3s infinite;
 }
@@ -244,6 +161,26 @@ header {
   }
 }
 
+@media (min-width: 768px) {
+  .slider-text {
+    font-size: 24px;
+  }
+}
+
+/* Styles for smaller screens */
+
+@media (max-width: 767px) {
+  .slider-text {
+    font-size: 16px;
+  }
+}
+
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #4f09f1;
+  border-radius: 5px;
+}
 /* image about us and our services section */
 
 .container-bodysection {
@@ -254,7 +191,7 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.container-bodysection h1 {
+.container-bodysection h3 {
   text-align: center;
 }
 
@@ -262,11 +199,7 @@ header {
 .box-column1 {
   flex: 1;
   max-width: 80%;
-}
-.image-column1 p {
-  color: black;
-  font-size: 20px;
-  font-family: Didot, serif;
+
 }
 .image-column1 h3 {
   color: black;
@@ -281,9 +214,9 @@ header {
 }
 
 .image-box1 h3 {
-  font-size: 75px;
+  font-size: 55px;
   padding-top: 60px;
-  margin-bottom: 20px;
+  padding-left: 10px;
   color: green;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }
@@ -291,23 +224,71 @@ header {
 .image-box1 p {
   color: black;
   font-size: 20px;
-  padding-top: 40px;
+  padding-left:10px;
   padding-bottom: 40px;
   font-family: Didot, serif;
+}
+
+.image-box a{
+  background-color: red;
+  border-radius: 5px;
+  font-size: 25px;
+  color: white;
+}
+
+.image-box1 a{
+  background-color: red;
+  border-radius: 5px;
+  font-size: 25px;
+  color: white;
 }
 .image-box1 img {
   max-width: 100%;
   height: auto;
   padding-left: 20px;
+  
+
 }
-.image-box1 button {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  background-color: #0400ff;
-  color: white;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
+
+ /* Adjust font sizes for smaller screens using media queries */
+ @media (max-width: 768px) {
+  .image-box1 h3 {
+    font-size: 35px; 
+    text-align: center;
+    padding: 10px;
+  }
+
+  .image-box1 p {
+    font-size: 14px; 
+    text-align: center;
+  }
+}
+
+/* Styles for larger screens */
+
+@media (min-width: 768px) {
+  .container-bodysection {
+    flex-direction: row;
+  }
+
+  .box-column1 {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .image-column1 {
+    width: 50%;
+    padding: 20px;
+  }
+
+}
+
+/* Styles for smaller screens */
+
+@media (max-width: 767px) {
+  .box-column1, .image-column1 {
+    width: 100%;
+  }
 }
 
 .image-column1 button:hover {
@@ -326,9 +307,20 @@ header {
   }
 }
 
+.card-service {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-service img {
+  max-width: 100%;
+  height: auto;
+}
+
 .service-container {
   padding-bottom: 60px;
   align-items: center;
+  width: 100%;
   justify-content: center;
 }
 .service-container h1 {
@@ -348,6 +340,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .card-service h3 {
   color: blue;
@@ -358,9 +351,9 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
-  max-width: 250px;
+  max-width: 280px;
   text-align: center;
 }
 .card-service img {
@@ -408,16 +401,16 @@ header {
 
 .container-title h1 {
   text-align: center;
-  font-size: 40px;
-
-  font-family: DejaVu Sans Mono, monospace;
+  font-size: 50px;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
   color: rgb(3, 3, 3);
 }
 .container-responsibility {
   display: flex;
+  
   justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgb(221, 218, 218);
@@ -427,9 +420,8 @@ header {
 }
 
 .image-column,
-.box-column {
-  flex: 1;
-  max-width: 80%;
+.box-column { 
+  width: 80%; 
   background-color: rgb(221, 218, 218);
 }
 
@@ -440,7 +432,7 @@ header {
 }
 
 .image-box h3 {
-  font-size: 45px;
+  font-size: 55px;
   color: green;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }
@@ -478,9 +470,25 @@ header {
     align-items: center;
   }
 
-  .image-column,
+  .image-column img,
   .box-column {
     max-width: 100%;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-service, .card-product {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+
+/* Styles for smaller screens */
+
+@media (max-width: 767px) {
+  .card-service, .card-product {
+    width: 100%;
   }
 }
 
@@ -511,8 +519,7 @@ header {
 }
 
 .column-touch li,
-a,
-p {
+a, p {
   margin-bottom: 5px;
   color: white;
   font-size: 15px;
@@ -520,6 +527,7 @@ p {
 
 .column-touch a {
   text-decoration: none;
+  color: white;
 }
 
 .copyright {
@@ -529,17 +537,59 @@ p {
   padding: 20px;
   font-size: 25px;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+
+  .column-touch {
+    max-width: 100%;
+  }
+}.copyright{
+  width: 100%;
+}
+
+.footer {
+  background-color: #0a1810;
+  padding: 20px;
+}
+
+.column-touch {
+  margin-bottom: 20px;
+}
+
+/* Adjust font sizes for smaller screens using media queries */
+@media (max-width: 767px) {
+  .column-touch {
+    text-align: center;
+  }
+
+  .column-touch h3 {
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+
+  .column-touch p, .column-touch ul {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+
+  .copyright p {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+}
+
 
 /* End Footer */
 
-/* Media query for responsive design */
+
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+    width: 100%;
   }
 
   nav {
-    padding: 10px;
+    
+    width: 100%;
   }
 
   .menu li {
@@ -547,42 +597,75 @@ p {
   }
 
   .slider-text {
-    font-size: 30px;
+    font-size: 20px;
+    width: 100%;
   }
 
   .image-box1 h3 {
-    font-size: 40px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .image-column1 img {
+    width: 100%;
+  }
+  .image-box h3{
+    font-size: 20px;
+    width: 100%;
   }
 
   .image-box1 p {
     font-size: 18px;
+    width: 100%;
   }
 
   .card-service h3 {
     font-size: 20px;
+    width:100%;
   }
 
   .card-service p {
     font-size: 15px;
+    width: 100%;
   }
 
   .card-service img {
     height: 14rem;
+    width: 100%;
+  }
+  .column-touch{
+    font-size: 20px;
+    width: 100%;
+  }
+  .footer{
+    font-size: 20px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 2px;
   }
 
   .container-title h1 {
-    font-size: 30px;
-  }
-
-  .footer .column-touch h3 {
     font-size: 20px;
+    width: 100%;
   }
 
-  .footer .column-touch ul {
+  .footer .column-touch h3 p{
     font-size: 15px;
+    width: 100%;
+    text-align: center;
   }
 
-  .footer .copyright {
-    font-size: 20px;
+  .footer .column-touch ul li{
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 10px;
+    width: 100%;
+    padding: 2px;
+    flex-direction: column;
+    text-align: center;
+    padding: 2px;
   }
 }
