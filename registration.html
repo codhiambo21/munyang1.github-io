@@ -7,42 +7,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Domain Registration | Welcome Munyang Solutions</title>
+        <link rel="icon" href="image/logo_3 (2).png" type="logo 2">
         <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">
-      <img src="image/logo_3 (2).png" alt="Munyang Solutions">
-    </div>
-    <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="submenu">
-            <a href="#">Services</a>
-            <ul class="sub-menu">
-                <li class="submenu-item"><a href="web.html">Web Services</a>
-                    <ul class="sub-sub-menu">
-                        <li><a href="web.html">Web Design & Development</a></li>
-                        <li><a href="hosting.html">Web Hosting</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                        <li><a href="email.html">Email Hosting</a></li>
-                    </ul>
-                </li>
-                <li class="submenu-item"><a href="system.html">System Design & Development</a></li>
-                <li class="submenu-item"><a href="computer.html">Computer Accessories</a></li>
-            </ul>
-        </li>
-        <li><a href="promotion.html">Promotions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo_3 (2).png" alt="Munyang Solutions" width="150" height="80" class="d-inline-block align-top" alt="Your Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <a class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="webdesign.html">Web Services</a>
+                        <a class="dropdown-item" href="system.html">System Services</a>
+                        <a class="dropdown-item" href="computer.html">Computer Accessories</a>
+                    </div>
+                </div>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Other Services
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="dev.html">Web Design & Development</a>
+                            <a class="dropdown-item" href="hosting.html">Web Hosting</a>
+                            <a class="dropdown-item" href="registration.html">Registration</a>
+                            <a class="dropdown-item" href="email.html">Email Hosting</a>
+                          </div>
+                        </div>
+                      <a class="nav-item"><a class="nav-link" href="promotion.html">Promotions</a>
+                      <a class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                </div>
+          </div>
+        </div>
+    </nav>
+<style>
+  .navbar-toggler-icon {
+           
+           color:blue;
+       }
+
+       .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+           display: block;
+       }
+</style>
 
 <div class="about-section">
   <h1>Domain Registration</h1>
@@ -110,6 +130,8 @@
 <div class="copyright">
   <p>&copy; 2023 Munyang Solutions | All Rights Reserved.</p>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

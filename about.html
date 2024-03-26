@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Munyang Solutions</title>
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="js/script.js">
-  <title>About Us | Munyang Solutions</title>
+  <link rel="icon" href="image/logo_3 (2).png" type="logo 2">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+
 </head>
 <body>
-  <section>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="image/logo_3 (2).png" alt="Munyang Solutions">
-      </div>
-      <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-      <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li class="submenu">
-              <a href="#">Services</a>
-              <ul class="sub-menu">
-                  <li class="submenu-item"><a href="web.html">Web Services</a>
-                      <ul class="sub-sub-menu">
-                          <li><a href="web.html">Web Design & Development</a></li>
-                          <li><a href="hosting.html">Web Hosting</a></li>
-                          <li><a href="registration.html">Registration</a></li>
-                          <li><a href="email.html">Email Hosting</a></li>
-                      </ul>
-                  </li>
-                  <li class="submenu-item"><a href="system.html">System Design & Development</a></li>
-                  <li class="submenu-item"><a href="computer.html">Computer Accessories</a></li>
-              </ul>
-          </li>
-          <li><a href="promotion.html">Promotions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
-  
-</section>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo_3 (2).png" alt="Munyang Solutions" width="150" height="80" class="d-inline-block align-top" alt="Your Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <a class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="webdesign.html">Web Services</a>
+                        <a class="dropdown-item" href="system.html">System Services</a>
+                        <a class="dropdown-item" href="computer.html">Computer Accessories</a>
+                    </div>
+                </div>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Other Services
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="dev.html">Web Design & Development</a>
+                            <a class="dropdown-item" href="hosting.html">Web Hosting</a>
+                            <a class="dropdown-item" href="registration.html">Registration</a>
+                            <a class="dropdown-item" href="email.html">Email Hosting</a>
+                          </div>
+                        </div>
+                      <a class="nav-item"><a class="nav-link" href="promotion.html">Promotions</a>
+                      <a class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                </div>
+          </div>
+        </div>
+    </nav>
+
+<style>
+   .navbar-toggler-icon {
+            
+            color:blue;
+        }
+
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+</style>
 <script>
-const flyingSection = document.querySelector('.flying-section');
-
-window.addEventListener('scroll', () => {
-  const sectionPosition = flyingSection.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight / 1.3; // Adjust for when the element should start flying in
-
-  if (sectionPosition < windowHeight) {
-    flyingSection.classList.add('active');
+  function toggleNavbar(show) {
+    var navbarNav = document.getElementById('navbarNav');
+    navbarNav.classList.toggle('show', show);
   }
-});
 </script>
   
     <div class="about-section">
         <h1>About</h1>
         </div>
-
         
-          <div class="animate-section">
-          
-
-          </div>
-
+        <h1 class="text-center">Who We Are</h1><hr>
           <div class="container-mission">
             <div class="service-mission">
              <div class="card-service">
@@ -88,39 +99,59 @@ window.addEventListener('scroll', () => {
               </div>
             </div>
           </div>
-
-            <div class="image-container">
-
-              <div class="card-image" >
-                <img src="image/sms.jpg" alt="School system">
+        
+          <h1 class="text-center">Our Services</h1><hr>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/sms.jpg" alt="School system">
+                </div>
               </div>
-              <div class="card-image">
-                <img src="image/domain.jpg" alt="Domain Services">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/domain.jpg" alt="Domain Services">
+                </div>
               </div>
-              <div class="card-image">
-                <img src="image/pos.jpg" alt="Point of Sales Services">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/pos.jpg" alt="Point of Sales Services">
+                </div>
               </div>
-              <div class="card-image">
-                <img src="image/inventory ssystem.png" alt="Inventory Services">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/inventory ssystem.png" alt="Inventory Services">
+                </div>
               </div>
             </div>
 
-            <div class="image-container">
-              <div class="card-image">
-                <img src="image/MS.png" alt="Managed Services">
+            
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/MS.png" alt="Managed Services">
+                </div>
               </div>
-              <div class="card-image">
-                <img src="image/email.jpg" alt="Email Services">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/email.jpg" alt="Email Services">
+                </div>
               </div>
-               <div class="card-image">
-                <img src="image/web design.png" alt="Domain Services">
-            </div>
-            <div class="card-image">
-                <img src="image/Software.png" alt="Inventory Services">
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/web design.png" alt="Domain Services">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card-image">
+                  <img src="image/Software.png" alt="Inventory Services">
+                </div>
+              </div>
             </div>
           </div>
 
-          
+               
+          <h1 class="text-center">Our Work</h1><hr>
           <div class="rating-container">
             <div class="rating-column">
               <div class="rating-bar" id="rating-bar-1"></div>
@@ -139,11 +170,38 @@ window.addEventListener('scroll', () => {
             </div>
           </div>
 
+      
+
           <!-- Javascript for the percentage progress bar-->
-            <script>
-            
-            </script>
-            <script src="script.js"></script>
+          <script>
+            // Function to animate the rating bars
+            function animateRatingBars(barId, percentId, targetPercent) {
+              let currentPercent = 0;
+              const interval = 50; // Adjust the interval as needed
+          
+              // Function to update the rating bar and percentage
+              function updateRating() {
+                document.getElementById(barId).style.width = currentPercent + '%';
+                document.getElementById(percentId).textContent = currentPercent + '%';
+          
+                if (currentPercent >= targetPercent) {
+                  clearInterval(animation);
+                } else {
+                  currentPercent++;
+                }
+              }
+          
+              // Start the animation
+              const animation = setInterval(updateRating, interval);
+            }
+          
+            // Trigger the animation on window load
+            window.onload = function () {
+              animateRatingBars('rating-bar-1', 'rating-percent-1', 85);
+              animateRatingBars('rating-bar-2', 'rating-percent-2', 95);
+              animateRatingBars('rating-bar-3', 'rating-percent-3', 67);
+            };
+          </script>
     
           <!--Footer -->
       <footer class="footer">
@@ -178,8 +236,11 @@ window.addEventListener('scroll', () => {
       </footer>
 
       <div class="copyright">
-        <p>&copy; 2022 Munyang Solutions | All Rights Reserved.</p>
+        <p>&copy; 2023 Munyang Solutions | All Rights Reserved.</p>
       </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
     </html>
 

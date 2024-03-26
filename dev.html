@@ -1,367 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Services | Welcome to Munyang Solutions</title>
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/dev.css">
-  
-  <script type="text/javascript" src="js/dev.js"></script>
-  <title>Web Development | Welcome to Munyang Solutions</title>
+  <link rel="icon" href="image/logo 2.PNG" type="logo 2">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-  
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo_3 (2).png" alt="Munyang Solutions" width="150" height="80" class="d-inline-block align-top" alt="Your Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <a class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="webdesign.html">Web Services</a>
+                        <a class="dropdown-item" href="system.html">System Services</a>
+                        <a class="dropdown-item" href="computer.html">Computer Accessories</a>
+                    </div>
+                </div>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Other Services
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="dev.html">Web Design & Development</a>
+                            <a class="dropdown-item" href="hosting.html">Web Hosting</a>
+                            <a class="dropdown-item" href="registration.html">Registration</a>
+                            <a class="dropdown-item" href="email.html">Email Hosting</a>
+                          </div>
+                        </div>
+                      <a class="nav-item"><a class="nav-link" href="promotion.html">Promotions</a>
+                      <a class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                </div>
+          </div>
+        </div>
+    </nav>
+<style>
+   .navbar-toggler-icon {
+            
+            color:blue;
+        }
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: rgb(252, 249, 245);
-      box-sizing: border-box;
-    }
-    
-    /* Float four columns side by side */
-    .column {
-      float: left;
-      width: 25%;
-      padding: 0 10px;
-    }
-    
-    /* Remove extra left and right margins, due to padding */
-    .row {margin: 0 -5px;}
-    
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    /* Responsive columns */
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-      }
-    }
-    
-   
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(5, 5, 5, 0.2);
-      padding: 16px;
-      text-align: center;
-      border-radius: 40px;
-      background-color: #fcfafa;
-    }
-    #projects .project-img {
-	flex-basis: 50%;
-	height: 400px;
-	position: center;
-}
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	
-	opacity: 0.7;
-}
-#projects .project-img img {
-	transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
-}
-/* End Projects section */
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+</style>
+<script>
+  function toggleNavbar(show) {
+    var navbarNav = document.getElementById('navbarNav');
+    navbarNav.classList.toggle('show', show);
+  }
+</script>
 
-/*footer-row */
-.footer-row {
-  display: flex;  
-  width: 100%;
-  
-  
-}
-.footer p{{
-  font-size: 0px;
-}}
-
-
-.footer-column {
-  flex: 30%;
-  padding: 5%;  
-  height:fit-content;
-}
-
-
-    </style>
-
-<nav class="navbar">
-  <div class="logo">
-    <img src="image/logo_3 (2).png" alt="Munyang Solutions">
+<div class="about-section">
+  <h1>Web Development</h1>
   </div>
-  <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+  
+  <h1 class="text-center">Our Design and Development work</h1><hr>
+  <div class="container-computer">
+    <div class="image-column12">
+      <img src="image/design.jpg" alt="Computer Hardware" class="img-fluid">
+    </div>
+    <div class="box-column12">
+      <div class="image-box12">
+        <h3>Our Design and Development Solutions;</h3>                  
+        <p>No compromise on quality and accuracy is the slogan of our diligent team of web developers. An outcome with zero flaws is the singleton target of our web development team.</p>
+                
+                  Static and Dynamic Website <br>
+                  E-Commerce Sites<br>
+                  Social Networking Sites<br>
+                  Sports Club Websites<br>
+                  Hotel And Restaurant Websites<br>
+                  Real Estate Websites<br>
+                  Company Business Websites<br>
+                  Personal CV Websites<br>
+                  Database Driven Websites<br>
+                  Email and SMS Responsive Websites
+                
+      </div>
+    </div>
   </div>
-  <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li class="submenu">
-          <a href="#">Services</a>
-          <ul class="sub-menu">
-              <li class="submenu-item"><a href="web.html">Web Services</a>
-                  <ul class="sub-sub-menu">
-                      <li><a href="web.html">Web Design & Development</a></li>
-                      <li><a href="hosting.html">Web Hosting</a></li>
-                      <li><a href="registration.html">Registration</a></li>
-                      <li><a href="email.html">Email Hosting</a></li>
-                  </ul>
-              </li>
-              <li class="submenu-item"><a href="system.html">System Design & Development</a></li>
-              <li class="submenu-item"><a href="computer.html">Computer Accessories</a></li>
-          </ul>
-      </li>
-      <li><a href="promotion.html">Promotions</a></li>
-      <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-
-  <!-- End Header -->
-
-  <!-- web Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Web Serv<span>i</span>ces</h1>
-        <p>At Munyang we value our customers and that’s why we dedicate ourselves to providing the best IT services to our esteemed customers.</p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/domain host.jpg" /></p>
-            <h3>Domain Registration</h3>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/email.jpg" /></p>
-            <h3>Email Hosting</h3>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/web hosting.jpg" /></p>
-            <h3>Web Hosting</h3>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/web design.png" /></p>
-            <h3>Web Design & Development </h3>
-          </div>
-        </div>
-      </div>
-      
-  </section>
-  <!-- End web Service Section -->
-
-  <!-- system Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">System Serv<span>i</span>ces</h1>
-        <p>At Munyang we value our customers and that’s why we dedicate ourselves to providing the best IT services to our esteemed customers.</p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/sms.jpg" /></p>
-            <h3>School Management System</h3>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/pos.jpg" /></p>
-            <h3>Point of Sales System</h3>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/inventory ssystem.png" /></p>
-            <h3>Inventory Systems</h3>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            
-            <p><img src="image/ecom.jpg" /></p>
-            <h3>eCommerce System </h3>
-          </div>
-        </div>
-      </div>
-      
-  </section>
-  <!-- End system Service Section -->
-
-<!-- other Service Section -->
-<section id="services">
-  <div class="services container">
-    <div class="service-top">
-      <h3 class="section-title">Computer Related Products & Serv<span>i</span>ces</h3>
-      <p>At Munyang we value our customers and that’s why we dedicate ourselves to providing the best IT services to our esteemed customers.</p>
-    </div>
-    <div class="row">
+    <div class="three-column-container">
       <div class="column">
-        <div class="card">
-          
-          <p><img src="image/software.jpg" /></p>
-          <h3>Computer Softwares</h3>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            Call: +237 675370599<br>
+            Call: +254 754406119<br>
+          </div>
         </div>
       </div>
     
       <div class="column">
-        <div class="card">
-          
-          <p><img src="image/maintenance center.jpg" /></p>
-          <h3>Computer Hardware & Peripherals</h3>
-        </div>
-      </div>
-      
-      <div class="column">
-        <div class="card">
-          
-          <p><img src="image/support.jpg" /></p>
-          <h3>IT Helpdesk Support System </h3>
-        </div>
-      </div>
-      
-      <div class="column">
-        <div class="card">
-          
-          <p><img src="image/security.jpg" /></p>
-          <h3>IT Security Products </h3>
-        </div>
-      </div>
-    </div>
-    
-
-<!-- other Service Section -->
-
-
-
-  <!-- Projects Section -->
-    <section id="projects">
-      <div class="projects container">
-        <div class="projects-header">
-          <h3 class="section-title">
-            Our Key <span> Responsibilities</span></h3>
-            <div class="project-all projects">
-              <h2>Show exactly what you have for your business</h2>
-              <div class="project-item">
-                <div class="project-info">
-                  <h3>Web Development</h3>
-                  <p>Shared hosting means that multiple different websites are all hosted on the same server, with each user being allocated a certain amount of storage space and a certain amount of resources</p>
-                </div>
-                <div class="project-img">
-                  <img src="image/web.JPG">
-                </div>
-              </div>
-              
-              <div class="project-item">
-                <div class="project-info">
-                  <h3>Email Hosting</h3>
-                  <p>Email hosting is a unique solution focused primarily on email servers. This service works independently from website hosting, hence your business will still operate at full scale even while you’re setting everything up..</p>
-                </div>
-                <div class="project-img">
-                  <img src="image/email hosting.JPG">
-                </div>
-              </div>
-              <div class="project-item">
-                <div class="project-info">
-                  <h3>Domain Hosting</h3>
-                  <p>Built on top of a reliable platform and backed by 24/7 expert support, Domain.com's Shared Hosting is designed for all user types. Regardless if you are just starting your online presence or already manage a fleet of websites, Domain.com provides you with the tools and controls you need to build, manage, and secure a powerful website</p>
-                </div>
-                <div class="project-img">
-                  <img src="image/hosting.png">
-                </div>
-              </div>
-            </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            info@munyang.net <br>
+            sales@munyang.net <br>
+            charles@munyang.net
           </div>
         </div>
-      </section>
-    </section>
-  <!-- End Projects Section -->
-
-
+      </div>
     
-
-  <!-- ****************  Footer Section ******************** -->
-  <footer> 
-  <div class="footer-row">
-    <div class="footer-column">
-      <h2>ABOUT US</h2>
-      <hr>
-      <div>
-        <p>Munyang Solutions is an IT Services Providing Company which specializes in website development, 
-          domain registration, website designing, website hosting, system development and all software 
-          and hardware solutions.</p>
+      <div class="column">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            Carrefour Emia, Yaounde-Cameroon <br>
+            Tassia Complex, Nairobi- Kenya
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-column" >
-      <h2>PRIVACY POLICY</h2>
-      <hr>
-      <p>
+
+     <!--Footer -->
+     <footer class="footer">
+      <div class="column-touch">
+        <h3>WHO WE ARE</h3>
+        <p>
+          Munyang Solutions is an IT Services Providing Company which specializes
+          in website development, domain registration, website designing, website hosting, system development and all software and hardware solutions.
+        </p>
+      </div>
+
+      <div class="column-touch">
+        <h3>MUNYANG POLICIES</h3>
         <ul>
-          <li><a href="policy.html">Privacy Policy</a></li>
-          <li><a href="services.html">Terms And Conditions</a></li>
-          <li><a href="gallery.html">Copyright Information</a></li>
-          <li><a href="mail.html">Find Us On The Map</a></li>
-          </ul>
-          
-      </p>
-    </div>
-    <div class="footer-column">
-      <h2>CONTACT INFO</h2>
-      <hr>
-      <p>
-        <ul>
-          <li>HEAD OFFICE</li>
-          <li>Address: Carrefour Emia, Yaounde-Cameroon</li>
-          <li>Call: +237 675370599</li>
-          <li>Email: sales@munyang.net</li>
-          <li>Website: www.munyang.net</li> 
-      </ul>
-      </p>
-    </div>
-  </div>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Conditions</a></li>
+          <li><a href="#">Copyright Information</a></li>
+          <li><a href="#">Find Us On The Map</a></li>
+        </ul>
+      </div>
+
+      <div class="column-touch">
+        <h3>GET IN TOUCH</h3>
+        <p>
+         HEAD OFFICE <br>
+          Address: Carrefour Emia, Yaounde-Cameroon<br>
+          Call: +237 675370599<br>
+          Email: sales@munyang.net<br>
+          Website: <a href="http://www.munyang.net">www.munyang.net</a>
+        </p>
+      </div>
+    </footer>
+
     <div class="copyright">
-        <p> Copyright © 2023 | All Rights Reserved |<a href="munyang.net">Munyang Solutions</a></p>
-      </div>
-
-  </div>
-  </footer>
-
-</body>
-</html>
+      <p>&copy; 2023 Munyang Solutions | All Rights Reserved.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>

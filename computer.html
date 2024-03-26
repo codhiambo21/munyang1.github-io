@@ -1,66 +1,95 @@
-DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/about.css">
-  <title>Computer Accessories| Munyang Solutions</title>
-</head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Computer Services | Munyang Solutions</title>
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="icon" href="image/logo_3 (2).png" type="logo 2">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="script.js" defer></script>
+      
+    </head>
 <body>
-  <section>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="image/logo_3 (2).png" alt="Munyang Solutions">
-      </div>
-      <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-      <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li class="submenu">
-              <a href="#">Services</a>
-              <ul class="sub-menu">
-                  <li class="submenu-item"><a href="web.html">Web Services</a>
-                      <ul class="sub-sub-menu">
-                          <li><a href="web.html">Web Design & Development</a></li>
-                          <li><a href="hosting.html">Web Hosting</a></li>
-                          <li><a href="registration.html">Registration</a></li>
-                          <li><a href="email.html">Email Hosting</a></li>
-                      </ul>
-                  </li>
-                  <li class="submenu-item"><a href="system.html">System Design & Development</a></li>
-                  <li class="submenu-item"><a href="computer.html">Computer Accessories</a></li>
-              </ul>
-          </li>
-          <li><a href="promotion.html">Promotions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="image/logo_3 (2).png" alt="Munyang Solutions" width="150" height="80" class="d-inline-block align-top" alt="Your Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                  <a class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                  <div class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="webdesign.html">Web Services</a>
+                          <a class="dropdown-item" href="system.html">System Services</a>
+                          <a class="dropdown-item" href="computer.html">Computer Accessories</a>
+                      </div>
+                  </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Other Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="dev.html">Web Design & Development</a>
+                              <a class="dropdown-item" href="hosting.html">Web Hosting</a>
+                              <a class="dropdown-item" href="registration.html">Registration</a>
+                              <a class="dropdown-item" href="email.html">Email Hosting</a>
+                            </div>
+                          </div>
+                        <a class="nav-item"><a class="nav-link" href="promotion.html">Promotions</a>
+                        <a class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                  </div>
+            </div>
+          </div>
+      </nav>
+  <style>
+     .navbar-toggler-icon {
+              
+              color:blue;
+          }
   
-</section>
+          .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+              display: block;
+          }
+  </style>
+  <script>
+    function toggleNavbar(show) {
+      var navbarNav = document.getElementById('navbarNav');
+      navbarNav.classList.toggle('show', show);
+    }
+  </script>
 
 <div class="about-section">
   <h1>Computer Accessories</h1>
-  </div>
+</div>
 
-  <div class="container-computer">
-     <div class="image-column12">
-      <img src="image/comp Accessorie.png" alt="Computer Hardware">
-    </div>
-    <div class="box-column12">
-      <div class="image-box12">
-         <h3>What we offer at Munyang Solutions;</h3>                  
-        <p>we offer a variety number of accessories for your desktop
-           and laptop computers. we also offer a big number of software for your 
-           phone and computer including pc games, antiviruses, operating systems, 
-           development software, video and audio editing software etc. contact us for more details</p>
-      </div>
-    </div>
-    
+<div class="container-computer">
+  <div class="image-column12">
+    <img src="image/comp Accessorie.png" alt="Computer Hardware" class="img-fluid">
   </div>
+  <div class="box-column12">
+    <div class="image-box12">
+      <h3>What we offer at Munyang Solutions;</h3>                  
+      <p>We offer a variety number of accessories for your desktop
+        and laptop computers. We also offer a big number of software for your 
+        phone and computer including PC games, antiviruses, operating systems, 
+        development software, video and audio editing software, etc. Contact us for more details.</p>
+    </div>
+  </div>
+</div>
 
 
    <!--Footer -->
